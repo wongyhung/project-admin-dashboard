@@ -14,14 +14,14 @@ html {
 body {
     height: 100%;
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: repeat(5, 1fr);
+    grid-template-columns: repeat(20, 1fr);
+    grid-template-rows: repeat(20, 1fr);
 }
 
 .sidebar {
     background: black;
     grid-column: 1 / 1;
-    grid-row: 1 / 6;
+    grid-row: 1 / 20;
     color: white;
     padding: 1.5em;
     display: grid;
@@ -30,22 +30,29 @@ body {
 
 .header {
     background-color: yellow;
-    grid-column: 2 / 6;
-    grid-row: 1 / 1;
+    grid-column: 2 / 21;
+    grid-row: 1 / 6;
 }
 
 .content {
     background-color: white;
-    grid-column: 2 / 6;
-    grid-row: 2 / 6;
+    grid-column: 2 / 21;
+    grid-row: 3 / 20;
     box-shadow: inset 0px 2px 5px -2px #000000;
+}
+
+footer {
+    background-color: lightgrey;
+    grid-column: 1 / 21;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .sidebar-header {
     display: flex;
     align-items: center;
     gap: 1em;
-    /* margin-bottom: 3em; */
     align-self: flex-start;
 }
 
