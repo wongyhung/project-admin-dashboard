@@ -328,3 +328,16 @@ img {
 .announcements > div:first-child {
     border: none;
 }
+
+.homework {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.homework > img {
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+}
