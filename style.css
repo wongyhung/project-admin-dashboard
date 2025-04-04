@@ -35,14 +35,14 @@ body {
 }
 
 .content {
-    background-color: white;
+    background-color: rgb(240, 240, 240);
     grid-column: 2 / 21;
     grid-row: 5 / 20;
-    box-shadow: inset 0px 3px 5px -2px #000000, inset 0px -3px 5px -2px #000000;
+    box-shadow: inset 0px 3px 5px -2px #00000088, inset 0px -3px 5px -2px #00000085;
 }
 
 footer {
-    background-color: lightgrey;
+    background-color: white;
     grid-column: 1 / 21;
     display: flex;
     align-items: center;
@@ -120,7 +120,7 @@ img {
     height: 5vh;
     border: none;
     border-radius: 25px;
-    background-color: white;
+    background-color: rgb(240, 240, 240);
     box-shadow: inset 0px 0px 5px -2px #000000;
 }
 
@@ -237,13 +237,13 @@ img {
 }
 
 .content-left > div {
-    background-color: rgb(229, 229, 229);
+    background-color: rgb(255, 255, 255);
     width: 90%;
     height: 90%;
     align-self: center;
     justify-self: center;
     border-radius: 5px;
-    box-shadow: 2px 2px 5px 0px black;
+    box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.504);
     border-left: 5px solid rgba(255, 255, 0, 0.934);
     padding-left: 10px;
     padding-top: 5px;
@@ -280,4 +280,40 @@ img {
 
 #a360noscope {
     animation: rainbowText 0.1s infinite;
+}
+
+.content-right {
+    grid-column: 2;
+    display: grid;
+    grid-template-rows: 50px 1fr 50px 1fr;
+}
+
+.announcements-header {
+    font-size: large;
+    font-weight: 500;
+    margin-left: 1vw;
+    grid-column: 1;
+    grid-row: 1;
+    align-self: end;
+}
+
+.homework-header {
+    font-size: large;
+    font-weight: 500;
+    margin-left: 1vw;
+    grid-column: 1;
+    grid-row: 3;
+    align-self: end;
+}
+
+.content-right > div {
+    background-color: rgb(255, 255, 255);
+    width: 90%;
+    height: 90%;
+    align-self: center;
+    justify-self: center;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.501);
+    padding-left: 10px;
+    padding-top: 5px;
 }
