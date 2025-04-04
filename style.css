@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Robotowhgt@100..900&display=swap');
 
 * {
     margin: 0px;
@@ -22,6 +22,10 @@ body {
     background: black;
     grid-column: 1 / 1;
     grid-row: 1 / 6;
+    color: white;
+    padding: 1.5em;
+    display: grid;
+    grid-template-rows: repeat(6, 1fr);
 }
 
 .header {
@@ -40,8 +44,9 @@ body {
 .sidebar-header {
     display: flex;
     align-items: center;
-    padding: 1em;
     gap: 1em;
+    /* margin-bottom: 3em; */
+    align-self: flex-start;
 }
 
 .airninelogo {
@@ -53,4 +58,35 @@ body {
     color: white;
     font-size: larger;
     letter-spacing: 4px;
+}
+
+.sidebar-primary {
+    grid-row: 2 / 4
+}
+
+.sidebar-secondary {
+    grid-row: 5;
+}
+
+.sidebar > ul > li > a > img {
+    height: auto;
+    width: 1.5em;
+    filter: invert(100%);
+}
+
+.sidebar > ul > li {
+    list-style: none;
+}
+
+.sidebar > ul > li > a {
+    text-decoration: none;
+    color: white;
+    display: flex;
+    align-items: center;
+    gap: 1em;
+    margin: 0.5em 0em;
+}
+
+.sidebar > ul > li > a:hover {
+    color: gainsboro;
 }
