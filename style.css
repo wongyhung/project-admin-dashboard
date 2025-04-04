@@ -103,15 +103,16 @@ img {
 
 .header-top {
     display: grid;
-    grid-template-columns: repeat(8, 1fr);
+    grid-template-columns: 4fr 0.5fr 2fr;
 }
 
 .searchbar {
-    grid-column: 1 / 6;
+    grid-column: 1;
     align-self: center;
     justify-self: center;
     display: flex;
     gap: 10px;
+    padding: 0 2em;
 }
 
 .searchbar > input {
@@ -121,4 +122,62 @@ img {
     border-radius: 25px;
     background-color: white;
     box-shadow: inset 0px 0px 5px -2px #000000;
+}
+
+.notificationbutton {
+    grid-column: 2;
+    align-self: center;
+    justify-self: right;
+}
+
+.user {
+    grid-column: 3;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: left;
+    padding: 0px 2em;
+    font-weight: bold;
+}
+
+.userphoto {
+    height: auto;
+    width: 3em;
+    border-radius: 25px;
+}
+
+.header-bottom {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(50px, 1fr));
+}
+.greeting {
+    padding: 0 5vh;
+    display: grid;
+    grid-template-columns: 1fr 0.25fr 2fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+.greetinghi {
+    grid-column: 3 / 4;
+    grid-row: 1;
+    align-self: center;
+    font-size: small;
+}
+
+.greetingname {
+    grid-column: 3 / 4;
+    grid-row: 2;
+    font-size: large;
+    font-weight: bold;
+}
+
+.greeting > img {
+    border: 2px solid black;
+    border-radius: 50px;
+    height: auto;
+    width: 3.5em;
+    align-self: start;
+    justify-self: right;
+    grid-column: 1;
+    grid-row: 1 / 3;
 }
